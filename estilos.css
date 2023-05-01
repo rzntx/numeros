@@ -1,5 +1,5 @@
 img.normal {
-    float: left; height: 300px; width: 300px;
+    float: left; height: 300px; width: 25%;
     margin-right: 5px;
 }
 
@@ -9,12 +9,12 @@ img.alta {
 
 h1 {
     border-bottom-style: inset;
-    margin-left: 305px;
+    margin-left: 30%;
 }
 
 pre {
     font-size: 1.2em;
-    margin-left: 302px;
+    margin-left: 30%;
 }
 
 .fonteAzul {
