@@ -9,7 +9,7 @@ img.alta {
 
 h1 {
     border-bottom-style: inset;
-    margin-left: 30%;
+    margin-left: 30% auto;
 }
 
 pre {
