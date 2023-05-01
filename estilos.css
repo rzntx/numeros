@@ -1,5 +1,6 @@
 img.normal {
     float: left; height: 300px; width: 300px;
+    margin-right: 5px;
 }
 
 img.alta {
@@ -8,6 +9,7 @@ img.alta {
 
 h1 {
     border-bottom-style: inset;
+    margin-left: 305px;
 }
 
 pre {
