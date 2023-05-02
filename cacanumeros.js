@@ -155,6 +155,7 @@ frm.addEventListener("submit", (e) => {
             if(!saida.includes("_") {
                botaoLimpar.disabled = true;
                botaoConfirmar.disabled = true;
+               }
         }
 
         else {
