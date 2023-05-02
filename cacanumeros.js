@@ -154,6 +154,8 @@ frm.addEventListener("submit", (e) => {
         else {
             frm.emojiNo.className = "exibe"
             frm.emojiOk.className = "oculta"
+            escolha = ""
+            frm.inEscolha.value = ""
         }
     })
     
