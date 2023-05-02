@@ -162,7 +162,7 @@ frm.addEventListener("submit", (e) => {
             frm.inEscolha.value = ""
         }
         
-        if(!saida.includes("_") || !saida.includes("_,") {
+        if(!saida.includes("_")) {
             botaoLimpar.disabled = true;
             botaoConfirmar.disabled = true;
         }
