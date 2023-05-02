@@ -8,6 +8,8 @@ frm.inEscolha.readOnly = true
 
 frm.addEventListener("submit", (e) => {
     e.preventDefault()
+    frm.btLimpar.disabled = false
+    frm.btConfirmar.disable = false
     botaoLimpar.disabled = false;
     botaoConfirmar.disabled = false;
     numeros = []
@@ -152,6 +154,10 @@ frm.addEventListener("submit", (e) => {
             frm.emojiOk.className = "exibe"
             frm.emojiNo.className = "oculta"
             frm.inEscolha.value = ""
+            if(saida.toString() == numeros.toString()) {
+                frm.btLimpar.disabled = true
+                frm.btConfirmar.disabled = true
+            }
 
         }
 
