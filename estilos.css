@@ -68,3 +68,7 @@ pre {
     width: 78px;
     height: 34px;
 }
+
+.clear {
+    clear: both;
+}
