@@ -158,6 +158,7 @@ frm.addEventListener("submit", (e) => {
     
     frm.btLimpar.addEventListener("click", () => {
         frm.inEscolha.value = ""
+        escolha = ""
     })
 
    
