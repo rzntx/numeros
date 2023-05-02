@@ -9,6 +9,7 @@ body {
 }
 img.normal {
     margin-top: 0;
+    margin-bottom: 0;
     height: 200px; width: 70%;
     float: left;
 }
