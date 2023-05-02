@@ -42,7 +42,7 @@ frm.addEventListener("submit", (e) => {
     saida.splice(oculto3, 0)
     saida[oculto3] = "_"
 
-    sequencia.innerText = saida.join(" - ")
+    sequencia.innerText = saida.join("; ")
     
     let escolha = ""
 
@@ -142,7 +142,7 @@ frm.addEventListener("submit", (e) => {
             let indice = numeros.indexOf(resposta)
             saida[indice] = resposta
             saida.slice((indice + 1), 0)
-            sequencia.innerText = saida.join(" - ")
+            sequencia.innerText = saida.join("; ")
             frm.inEscolha.value = ""
             escolha = ""
             frm.emojiOk.className = "exibe"
