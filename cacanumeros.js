@@ -167,7 +167,7 @@ frm.addEventListener("submit", (e) => {
     })
     
     if(!saida.includes("_")) {
-        frm.btConfirma.disabled = true;
+        frm.btConfirmar.disabled = true;
         frm.btLimpar.disabled = true;
     }
 
