@@ -9,6 +9,7 @@ body {
 }
 img.normal {
     height: 200px; width: 70%;
+    float: left;
 }
 
 img.alta {
