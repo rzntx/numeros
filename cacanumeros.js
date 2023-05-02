@@ -157,13 +157,7 @@ frm.addEventListener("submit", (e) => {
     })
     
     frm.btLimpar.addEventListener("click", () => {
-        let vetor = []
-        for(const i of escolha) {
-            vetor.push(i)
-        }
-        vetor.pop()
-        escolha = vetor.join("")
-        frm.inEscolha.value = escolha
+        frm.inEscolha.value = ""
     })
 
    
