@@ -162,6 +162,8 @@ frm.addEventListener("submit", (e) => {
     frm.btLimpar.addEventListener("click", () => {
         frm.inEscolha.value = ""
         escolha = ""
+        frm.emojiOk.className = "oculta"
+        frm.emojiNo.className = "oculta"
     })
 
    
