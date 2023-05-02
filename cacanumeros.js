@@ -175,10 +175,7 @@ frm.addEventListener("submit", (e) => {
         frm.emojiNo.className = "oculta"
     })
     
-    if(!saida.includes("_")) {
-        frm.btConfirmar.disabled = true;
-        frm.btLimpar.disabled = true;
-    }
+    
 
    
        
