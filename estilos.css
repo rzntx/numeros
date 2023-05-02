@@ -8,6 +8,7 @@ body {
 
 }
 img.normal {
+    margin-top: 0;
     height: 200px; width: 70%;
     float: left;
 }
@@ -17,8 +18,8 @@ img.alta {
 }
 
 h1 {
-    
     color: #FFF;
+    margin-bottom: 0;
 }
 
 pre {
