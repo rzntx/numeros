@@ -152,10 +152,7 @@ frm.addEventListener("submit", (e) => {
             frm.emojiOk.className = "exibe"
             frm.emojiNo.className = "oculta"
             frm.inEscolha.value = ""
-            if(!saida.includes("_") {
-               botaoLimpar.disabled = true;
-               botaoConfirmar.disabled = true;
-               }
+
         }
 
         else {
