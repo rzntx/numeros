@@ -1,6 +1,8 @@
 const frm = document.querySelector("form")
 const sequencia = document.querySelector("#outResp")
 
+frm.btLimpar.disabled = true
+frm.btConfirmar.disabled = true
 let numeros = []
 frm.inEscolha.readOnly = true
 
@@ -20,10 +22,10 @@ frm.addEventListener("submit", (e) => {
         if(num >= 100) {
             for(const j of numeros){
                 j--
-                }
             }
         }
     }
+   
 
     const oculto1 = Math.floor(Math.random() * numeros.length)
     const oculto2 = Math.floor(Math.random() * numeros.length)
@@ -187,4 +189,3 @@ frm.addEventListener("submit", (e) => {
        
     
 })
-
