@@ -4,57 +4,55 @@ const sequencia = document.querySelector("#outResp")
 
 let numeros = []
 frm.inEscolha.readOnly = true
+let saida = []
+let ocultos = []
+escolha = ""
+frm.btConfirmar.disabled = true
+frm.inEscolha.value = escolha
+
 
 
 frm.addEventListener("submit", (e) => {
     e.preventDefault()
-    frm.btLimpar.disabled = false
     frm.btConfirmar.disabled = false
     numeros = []
-    frm.inEscolha.value = ""
+    saida = []
+    ocultos = []
+    escolha = ""
     frm.emojiOk.className = "oculta"
     frm.emojiNo.className = "oculta"
     let num = Math.floor((Math.random() * 100) + 1)
+    if(num > 91) {
+        num = num - (num % 91)
+    }
     for(let i = 0; i < 10; i++) {
         numeros.push(num)
         num++
-        if(num >= 100) {
-            for(const j of numeros){
-                j--
-            }
-        }
     }
+
+   
+    const oculto1 = Math.floor(Math.random() * numeros.length)
+    ocultos.push(oculto1)
+    const oculto2 = Math.floor(Math.random() * numeros.length)
+    ocultos.push(oculto2)
+    const oculto3 = Math.floor(Math.random() * numeros.length)
+    ocultos.push(oculto3)
+
+    
    
 
-    const oculto1 = Math.floor(Math.random() * numeros.length)
-    const oculto2 = Math.floor(Math.random() * numeros.length)
-    const oculto3 = Math.floor(Math.random() * numeros.length)
-    let ocultos = []
-    ocultos[0] = numeros[oculto1]
-    ocultos[1] = numeros[oculto2]
-    ocultos[2] = numeros[oculto3]
-
-    let alternativas = []
-    for(let i = 0; i < 3; i++){
-            let k = Math.floor(Math.random() * numeros.length)
-            alternativas.push(numeros[k])
-            alternativas.push(ocultos[i])
-    }
-    let saida = []
     for(let i = 0; i < numeros.length; i++) {
         saida.push(numeros[i])
     }
+    
 
-    saida.splice(oculto1, 0)
+   
     saida[oculto1] = "_"
-    saida.splice(oculto2, 0)
     saida[oculto2] = "_"
-    saida.splice(oculto3, 0)
     saida[oculto3] = "_"
 
     sequencia.innerText = saida.join(", ")
-    
-    let escolha = ""
+})
 
     frm.btUm.addEventListener("click", () => {
         let um = frm.btUm.value
@@ -151,16 +149,17 @@ frm.addEventListener("submit", (e) => {
         if(numeros.includes(resposta) && !saida.includes(resposta)) {
             let indice = numeros.indexOf(resposta)
             saida[indice] = resposta
-            saida.slice((indice + 1), 0)
             sequencia.innerText = saida.join(", ")
             frm.inEscolha.value = ""
             escolha = ""
             frm.emojiOk.className = "exibe"
             frm.emojiNo.className = "oculta"
-            frm.inEscolha.value = ""
+            
             if(saida.toString() == numeros.toString()) {
                 frm.btLimpar.disabled = true
                 frm.btConfirmar.disabled = true
+                frm.inEscolha.value = ""
+                escolha = ""
             }
 
         }
@@ -181,10 +180,3 @@ frm.addEventListener("submit", (e) => {
         frm.emojiOk.className = "oculta"
         frm.emojiNo.className = "oculta"
     })
-    
-    
-
-   
-       
-    
-})
