@@ -21,6 +21,12 @@ frm.addEventListener("submit", (e) => {
     for(let i = 0; i < 10; i++) {
         numeros.push(num)
         num++
+        if(num >= 100) {
+            for(const i of numeros){
+                i--
+                }
+            }
+        }
     }
 
     const oculto1 = Math.floor(Math.random() * numeros.length)
