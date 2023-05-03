@@ -162,6 +162,7 @@ frm.addEventListener("submit", (e) => {
                 frm.btConfirmar.disabled = true
                 escolha = ""
                 frm.inEscolha.value = ""
+                frm.iniciar.focus()
             }
 
         }
