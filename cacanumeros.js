@@ -1,7 +1,5 @@
 const frm = document.querySelector("form")
 const sequencia = document.querySelector("#outResp")
-const botaoLimpar = document.querySelector("#btLimpar")
-const botaoConfirmar = document.querySelector("#btConfirmar")
 
 let numeros = []
 frm.inEscolha.readOnly = true
@@ -11,8 +9,6 @@ frm.addEventListener("submit", (e) => {
     e.preventDefault()
     frm.btLimpar.disabled = false
     frm.btConfirmar.disabled = false
-    botaoLimpar.disabled = false;
-    botaoConfirmar.disabled = false;
     numeros = []
     frm.inEscolha.value = ""
     frm.emojiOk.className = "oculta"
