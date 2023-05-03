@@ -7,6 +7,7 @@ frm.inEscolha.readOnly = true
 let saida = []
 let ocultos = []
 escolha = ""
+frm.inEscolha.value = ""
 frm.btConfirmar.disabled = true
 
 
@@ -20,7 +21,6 @@ frm.addEventListener("submit", (e) => {
     ocultos = []
     escolha = ""
     frm.inEscolha.value = escolha
-    frm.submit.focus()
     frm.emojiOk.className = "oculta"
     frm.emojiNo.className = "oculta"
     let num = Math.floor((Math.random() * 100) + 1)
