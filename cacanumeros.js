@@ -18,8 +18,8 @@ frm.addEventListener("submit", (e) => {
         numeros.push(num)
         num++
         if(num >= 100) {
-            for(const i of numeros){
-                i--
+            for(const j of numeros){
+                j--
                 }
             }
         }
