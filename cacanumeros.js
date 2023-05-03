@@ -1,8 +1,7 @@
 const frm = document.querySelector("form")
 const sequencia = document.querySelector("#outResp")
 
-frm.btLimpar.disabled = true
-frm.btConfirmar.disabled = true
+
 let numeros = []
 frm.inEscolha.readOnly = true
 
