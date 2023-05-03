@@ -160,9 +160,10 @@ frm.addEventListener("submit", (e) => {
             
             if(saida.toString() == numeros.toString()) {
                 frm.btConfirmar.disabled = true
+                frm.iniciar.focus()
                 escolha = ""
                 frm.inEscolha.value = ""
-                frm.iniciar.focus()
+               
             }
 
         }
