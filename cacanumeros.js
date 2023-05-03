@@ -8,7 +8,7 @@ let saida = []
 let ocultos = []
 escolha = ""
 frm.btConfirmar.disabled = true
-frm.inEscolha.value = escolha
+
 
 
 
@@ -19,6 +19,8 @@ frm.addEventListener("submit", (e) => {
     saida = []
     ocultos = []
     escolha = ""
+    frm.inEscolha.value = escolha
+    frm.submit.focus()
     frm.emojiOk.className = "oculta"
     frm.emojiNo.className = "oculta"
     let num = Math.floor((Math.random() * 100) + 1)
@@ -158,8 +160,8 @@ frm.addEventListener("submit", (e) => {
             if(saida.toString() == numeros.toString()) {
                 frm.btLimpar.disabled = true
                 frm.btConfirmar.disabled = true
-                frm.inEscolha.value = ""
                 escolha = ""
+                frm.inEscolha.value = ""
             }
 
         }
