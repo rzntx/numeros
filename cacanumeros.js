@@ -163,6 +163,7 @@ frm.addEventListener("submit", (e) => {
                 frm.iniciar.focus()
                 escolha = ""
                 frm.inEscolha.value = ""
+                location.reload()
                
             }
 
