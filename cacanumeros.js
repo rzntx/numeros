@@ -158,7 +158,6 @@ frm.addEventListener("submit", (e) => {
             frm.emojiNo.className = "oculta"
             
             if(saida.toString() == numeros.toString()) {
-                frm.btLimpar.disabled = true
                 frm.btConfirmar.disabled = true
                 escolha = ""
                 frm.inEscolha.value = ""
