@@ -16,6 +16,7 @@ frm.iniciar.focus()
 
 frm.addEventListener("submit", (e) => {
     e.preventDefault()
+    frm.iniciar.blur()
     frm.btConfirmar.disabled = false
     numeros = []
     saida = []
