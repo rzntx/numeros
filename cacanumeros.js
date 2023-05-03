@@ -9,6 +9,7 @@ let ocultos = []
 escolha = ""
 frm.inEscolha.value = ""
 frm.btConfirmar.disabled = true
+frm.iniciar.focus()
 
 
 
