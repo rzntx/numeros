@@ -6,12 +6,12 @@ const botaoConfirmar = document.querySelector("#btConfirmar")
 let numeros = []
 frm.inEscolha.readOnly = true
 frm.btLimpar.disabled = true
-frm.btConfirmar.disable = true
+frm.btConfirmar.disabled = true
 
 frm.addEventListener("submit", (e) => {
     e.preventDefault()
     frm.btLimpar.disabled = false
-    frm.btConfirmar.disable = false
+    frm.btConfirmar.disabled = false
     botaoLimpar.disabled = false;
     botaoConfirmar.disabled = false;
     numeros = []
