@@ -5,8 +5,7 @@ const botaoConfirmar = document.querySelector("#btConfirmar")
 
 let numeros = []
 frm.inEscolha.readOnly = true
-frm.btLimpar.disabled = true
-frm.btConfirmar.disabled = true
+
 
 frm.addEventListener("submit", (e) => {
     e.preventDefault()
